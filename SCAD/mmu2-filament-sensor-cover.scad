@@ -21,7 +21,7 @@ module part()
             }
             
             // brass insert hole
-            translate([0,63.5,-17]) rotate([90,0,0]) cylinder(r=3.8,h = 5.5, $fn=30); 
+            translate([0,63.5,-17]) rotate([90,0,0]) cylinder(r=3,h = 5.5, $fn=30); 
             translate([0,65,-17]) rotate([90,0,0]) cylinder(r=5,h = 2, $fn=30); 
             
             // mounting screws
@@ -44,8 +44,8 @@ module part()
             translate([-8,56.5,-1]) rotate([45,0,0]) cube([50,10,10]);
 
 
-        translate([7,50.4,0]) rotate([90,180,0]) linear_extrude(height = 0.6) 
-        { text("M1",font = "helvetica:style=Bold", size=5, center=true); }
+        translate([12,50.4,0]) rotate([90,180,0]) linear_extrude(height = 0.6) 
+        { text("DIGI",font = "monospace:style=Bold", size=5, center=true); }
     }
 }
 
