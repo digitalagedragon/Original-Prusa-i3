@@ -69,6 +69,7 @@ module pulley_body()
                translate([66.5,30,0]) rotate([0,90,0]) cylinder(r=11, h=14, $fn=50); 
                translate([66.5,15,-9]) cube([14,15,16]);
                translate([66.5,-7,-24]) cube([14,45,24]);
+               
                 
             }
 
@@ -95,8 +96,8 @@ module pulley_body()
             
             // selector shafts
             translate([-28,-48,-3]) rotate([0,90,0]) cylinder(r=4.3, h=130, $fn=50); 
-            translate([-26,-48,16]) rotate([0,90,0]) cylinder(r=2.7, h=130, $fn=50); 
-            translate([-26,-48,-19]) rotate([0,90,0]) cylinder(r=2.6, h=130, $fn=50); 
+            translate([-26,-48,16]) rotate([0,90,0]) #cylinder(r=2.7, h=130, $fn=50); 
+            translate([-26,-48,-19]) rotate([0,90,0]) #cylinder(r=2.6, h=130, $fn=50); 
             translate([-19,-48,16]) rotate([0,90,0]) cylinder(r1=2.65, r2=3,h=3, $fn=50); 
             translate([-19,-48,-19]) rotate([0,90,0]) cylinder(r1=2.6, r2=3, h=3, $fn=50); 
             translate([94,-48,16]) rotate([0,90,0]) cylinder(r1=2.65, r2=3,h=3, $fn=50); 
@@ -161,10 +162,10 @@ module pulley_body()
             for (i=[9:14:23])
                 {
                     translate([i,-14,-1.5]) rotate([90,0,0]) cylinder(r=1.65, h=20, $fn=50); 
-                    translate([i-2.8,-18,-1.5-2.9]) cube([5.6,2,19]);
+                    translate([i-3,-18,-1.5-2.9]) cube([6,2.8,19]);
                     
                     translate([i+28,-14,-1.5]) rotate([90,0,0]) cylinder(r=1.65, h=20, $fn=50); 
-                    translate([i-2.8+28,-18,-1.5-2.9]) cube([5.6,2,19]);
+                    translate([i-3+28,-18,-1.5-2.9]) cube([6,2.8,19]);
                 }
             
             // front corners
@@ -191,10 +192,10 @@ module pulley_body()
             // idler spring screws
             translate([-22,-27,0]) rotate([0,0,0]) cylinder(r=1.8, h=50, $fn=50); 
             translate([91,-27,0]) rotate([0,0,0]) cylinder(r=1.8, h=50, $fn=50); 
-            translate([-22-2.9,-27-2.8,14]) cube([10,5.6,2.1]);
-            translate([91-2.9,-27-2.8,14]) cube([20,5.6,2.1]);
-            translate([-22-1.8,-27-2.8,14.4]) cube([1.8*2,5.6,2.1]);
-            translate([91-1.8,-27-2.8,14.4]) cube([1.8*2,5.6,2.1]);
+            translate([-22-2.9,-27-3,14]) cube([10,6,2.8]);
+            translate([91-2.9,-27-3,14]) cube([20,6,2.8]);
+            translate([-22-1.8,-27-3,14.4]) cube([1.8*2,6,2.8]);
+            translate([91-1.8,-27-3,14.4]) cube([1.8*2,6,2.8]);
             
             // pulley motor screws and opening
             translate([93,0,-0.5]) rotate([0,90,0]) cylinder(r=11.5, h=5, $fn=50); 
@@ -235,18 +236,18 @@ module pulley_body()
             
             translate([91,7,-26]) cylinder(r=1.65, h=15, $fn=50); 
             translate([-22,7,-26]) cylinder(r=1.65, h=15, $fn=50); 
-            translate([-32+2.9,4.1,-21]) cube([10,5.8,2]);
-            translate([91-2.9,4.1,-21]) cube([10,5.8,2]);
-            translate([-23.65,4.1,-20.6]) cube([1.65*2,5.8,2]);
-            translate([89.35,4.1,-20.6]) cube([1.65*2,5.8,2]);
+            translate([-32+2.9,4.2,-21]) cube([10,6,2.8]);
+            translate([91-2.9,4.2,-21]) cube([10,6,2.8]);
+            translate([-23.65,4.2,-20.6]) cube([1.65*2,6,2.8]);
+            translate([89.35,4.2,-20.6]) cube([1.65*2,6,2.8]);
             
             
             translate([91,-57,-26]) cylinder(r=1.65, h=15, $fn=50); 
             translate([-22,-57,-26]) cylinder(r=1.65, h=15, $fn=50); 
-            translate([-32+2.9,-59.9,-21]) cube([10,5.8,2]);
-            translate([91-2.9,-59.9,-21]) cube([10,5.8,2]);
-            translate([-23.65,-59.9,-20.6]) cube([1.65*2,5.8,2]);
-            translate([89.35,-59.9,-20.6]) cube([1.65*2,5.8,2]);
+            translate([-32+2.9,-60,-21]) cube([10,6,2.8]);
+            translate([91-2.9,-60,-21]) cube([10,6,2.8]);
+            translate([-23.65,-60,-20.6]) cube([1.65*2,6,2.8]);
+            translate([89.35,-60,-20.6]) cube([1.65*2,6,2.8]);
             
             // material saving
             translate([-24,-33,-3]) rotate([0,90,0]) cylinder(r=9, h=9, $fn=6); 
@@ -266,8 +267,8 @@ module pulley_body()
             }
 
             //version
-            translate([-14,-5.5,-24.4]) rotate([0,180,180]) linear_extrude(height = 0.8) 
-            { text("M1",font = "helvetica:style=Bold", size=5, center=true); }    
+            translate([-20,-5.5,-24.4]) rotate([0,180,180]) linear_extrude(height = 0.8) 
+            { text("DIGI",font = "monospace:style=Bold", size=5, center=true); }    
         }
 
 }
