@@ -177,10 +177,10 @@ module idler_body_base()
         translate([91,14,22]) cylinder(r1=1.65, r2=2.2,h=2, $fn=50); 
         translate([-24,8,10]) cylinder(r=1.65, h=25, $fn=50); 
         translate([-24,8,22]) cylinder(r1=1.65, r2=2.2,h=2, $fn=50); 
-        translate([91-2.9,14-2.8,18])  cube([10,5.6,2]);
-        translate([-34+2.8,8-2.8,18])  cube([10,5.6,2]);
-        translate([91-1.65,14-2.8,17.4])  cube([1.65*2,5.6,2]);
-        translate([-27.3+1.65,8-2.8,17.4])  cube([1.65*2,5.6,2]);
+        translate([91-2.9,14-2.8,18])  cube([10,6,2.8]);
+        translate([-34+2.8,8-2.8,18])  cube([10,6,2.8]);
+        translate([91-1.65,14-2.8,17.4])  cube([1.65*2,6,2.8]);
+        translate([-27.3+1.65,8-2.8,17.4])  cube([1.65*2,6,2.8]);
         
         // cover edges
         translate([-17,-34,18]) rotate([-31,0,0])  cube([33,10,20]);
@@ -189,8 +189,8 @@ module idler_body_base()
         
         
         //version
-        translate([-5,24.4,7]) rotate([-90,180,0]) linear_extrude(height = 0.8) 
-        { text("M1",font = "helvetica:style=Bold", size=5, center=true); }  
+        translate([-1,24.4,7]) rotate([-90,180,0]) linear_extrude(height = 0.8) 
+        { text("DIGI",font = "monospace:style=Bold", size=5, center=true); }  
     
     }
 }
