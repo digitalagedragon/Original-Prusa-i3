@@ -22,10 +22,10 @@ module front_plate()
         translate([59,-65,15]) rotate([90,0,0]) cylinder(r=3.2, h=5, $fn=50);
         
         // brass insert
-        translate([59,-60,4]) rotate([90,0,0]) cylinder(r=3.8, h=6, $fn=50); 
-        translate([59,-63,4]) rotate([90,0,0]) cylinder(r2=5, r1=3.5, h=2, $fn=50); 
-        translate([59,-59.5-1,4]) rotate([90,0,0]) cylinder(r1=5, r2=3.5, h=2, $fn=50); 
-        translate([59,-64,4]) rotate([90,0,0]) cylinder(r1=5,r2=5.5, h=2, $fn=50); 
+        translate([59,-60,4]) rotate([90,0,0]) cylinder(r=3, h=6, $fn=50); 
+        translate([59,-63,4]) rotate([90,0,0]) cylinder(r2=3, r1=3, h=2, $fn=50); 
+        //translate([59,-59.5-1,4]) rotate([90,0,0]) cylinder(r1=5, r2=3.5, h=2, $fn=50); 
+        //translate([59,-64,4]) rotate([90,0,0]) cylinder(r1=5,r2=5.5, h=2, $fn=50); 
         
         // edges
         translate([45,-64,-15]) rotate([0,0,-45]) cube([15,4,40]);
