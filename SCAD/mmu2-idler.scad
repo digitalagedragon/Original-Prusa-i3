@@ -60,10 +60,10 @@ module idler()
                 translate([-20,0,10.4]) cylinder(r=3.1, h=5, $fn=50); 
                 
                 // nuts
-                translate([-12.8,-2.8,7]) cube([5.6,10,2.8]);
-                translate([-22.8,-2.8,7]) cube([5.6,10,2.8]);
-                translate([-12.8,2.8,6.9]) cube([5.6,10,3]);
-                translate([-22.8,2.8,6.9]) cube([5.6,10,3]);
+                translate([-13,-2.8,7]) cube([6,10,2.8]);
+                translate([-23,-2.8,7]) cube([6,10,2.8]);
+                translate([-13,2.8,6.9]) cube([6,10,3]);
+                translate([-23,2.8,6.9]) cube([6,10,3]);
                 
                 
                 translate([-26,6.5,10]) rotate([30,0,0]) cube([21,16,10]);
