@@ -60,10 +60,10 @@ module idler()
                 translate([-20,0,10.4]) cylinder(r=3.1, h=5, $fn=50); 
                 
                 // nuts
-                translate([-12.8,-2.8,7]) cube([5.6,10,2]);
-                translate([-22.8,-2.8,7]) cube([5.6,10,2]);
-                translate([-12.8,2.8,6.9]) cube([5.6,10,2.2]);
-                translate([-22.8,2.8,6.9]) cube([5.6,10,2.2]);
+                translate([-12.8,-2.8,7]) cube([5.6,10,2.8]);
+                translate([-22.8,-2.8,7]) cube([5.6,10,2.8]);
+                translate([-12.8,2.8,6.9]) cube([5.6,10,3]);
+                translate([-22.8,2.8,6.9]) cube([5.6,10,3]);
                 
                 
                 translate([-26,6.5,10]) rotate([30,0,0]) cube([21,16,10]);
@@ -140,8 +140,8 @@ module idler()
     translate([-30,-25,11]) cube([150,50,15]);
     
     // version
-    translate([6,-1.5,10.5]) rotate([0,0,0]) linear_extrude(height = 0.8) 
-    { text("M1",font = "helvetica:style=Bold", size=5, center=true); }    
+    translate([2,-1.5,10.5]) rotate([0,0,0]) linear_extrude(height = 0.8) 
+    { text("DIGI",font = "monospace:style=Bold", size=5, center=true); }    
     }
 }
 
